@@ -74,7 +74,7 @@ bool GameManager::startGame(){
 void GameManager::setFloor(int floor) {
     currentFloor = floor;
 }
-int GameManager::getFloor(){
+int GameManager::getFloor() const{
     return currentFloor;
 }
 void GameManager::resetMaze(){ 
@@ -85,7 +85,7 @@ void GameManager::resetMaze(){
         }
     }
 }
-std::vector<std::vector<Tile>> GameManager::getMap(){
+std::vector<std::vector<Tile>> GameManager::getMap() const{
     return maze;
 }
 void GameManager::store(std::ofstream& saveFile){ 

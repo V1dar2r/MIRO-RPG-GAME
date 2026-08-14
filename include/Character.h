@@ -21,14 +21,14 @@ protected:
     inline static std::mt19937 gen;
     View view;
 public:
-    int getSpeed();
-    int getSpeedStat();
+    int getSpeed() ;
+    int getSpeedStat() const;
 
     virtual int takeDamage(int damage);// 몬스터가 데미지를 받았을 때 몬스터의 hp 및 상태를 관리하는 기능
-    std::string getClass();
+    std::string getClass() const;
     virtual int getAttackDamage(); //플레이어에게 줄 데미지를 난수를 통해 반환하는 기능
     int getAttackDamage(int damage);
-    int getHP();
-    int getAttack();
+    int getHP() const;
+    int getAttack() const;
     void setAttack(int newAttack);
 };

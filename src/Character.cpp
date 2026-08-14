@@ -20,7 +20,7 @@ int Character::getSpeed(){
         int currentSpeed = dis(gen);
         return currentSpeed;
     }
-int Character::getSpeedStat(){
+int Character::getSpeedStat() const{
     return speed;
     }
 
@@ -36,7 +36,7 @@ int Character::takeDamage(int damage){ // 몬스터가 데미지를 받았을 �
     }
     return false;
 }
-std::string Character::getClass(){
+std::string Character::getClass() const{
     return name;
 }
 
@@ -52,10 +52,10 @@ int Character::getAttackDamage(int damage){
     delay(800);
     return damage;
 }
-int Character::getHP(){
+int Character::getHP() const{
     return hp;
 }
-int Character::getAttack(){
+int Character::getAttack() const{
     return attack;
 }
 void Character::setAttack(int newAttack){

@@ -51,11 +51,11 @@ class GameManager{ //게임 조작 및 설정에 관한 관리하는 클래스
 
     void setFloor(int floor) ;
 
-    int getFloor();
+    int getFloor() const;
 
     void resetMaze();
 
-    std::vector<std::vector<Tile>> getMap();
+    std::vector<std::vector<Tile>> getMap() const;
 
     std::unique_ptr<Player> choiceClass();
 
@@ -75,9 +75,9 @@ class GameManager{ //게임 조작 및 설정에 관한 관리하는 클래스
     
     char asciiCodeTest (int n);
 
-    bool move(Player& p,char c);
+    bool move(Player& p, char c);
 
     bool playing(bool loading);
 
-    bool checkEvent(int next_x,int next_y,Player& p);
+    bool checkEvent(int next_x, int next_y, Player& p);
 };

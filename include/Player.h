@@ -19,9 +19,9 @@ class Player : public Character {// 플레이어의 체력,위치,공격력을 �
         
         void setAttack(int newAttack);
         
-        int getX();
+        int getX() const;
         
-        int getY(); 
+        int getY() const; 
         
         void setPosition(int new_x,int new_y); // 새로운 위치값으로 변경하는 기능
         

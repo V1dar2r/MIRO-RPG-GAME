@@ -21,10 +21,10 @@ void Player::setSpeed(int newSpeed){
 void Player::setAttack(int newAttack){
     attack = newAttack;
 }
-int Player::getX(){
+int Player::getX() const{
     return x;
 }
-int Player::getY(){ 
+int Player::getY() const{ 
     return y;
 }
 void Player::setPosition(int new_x,int new_y){ // 새로운 위치값으로 변경하는 기능
