@@ -9,6 +9,8 @@ class Player;
 
 class GameManager;
 
+enum class Tile : char;
+
 class View{
 private:
 std::vector<std::string> logs;

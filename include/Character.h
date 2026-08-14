@@ -4,6 +4,7 @@
 #include <thread>
 #include <chrono>
 #include <string>
+#include "View.h"
 
 void delay(int ms); // 문장 출력이 바로 되는 걸 막기 위한 밀리초단위의 시간 지연
 void delaySec(int sec); // 문장 출력이 바로 되는 걸 막기 위한 초단위의 시간 지연
@@ -18,7 +19,7 @@ protected:
     std::string name;
     inline static std::random_device rd;
     inline static std::mt19937 gen;
-    View* view;
+    View view;
 public:
     int getSpeed();
     int getSpeedStat();

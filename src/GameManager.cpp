@@ -1,4 +1,3 @@
-#pragma once
 #include <iostream>
 #include <vector>
 #include <fstream>
@@ -160,7 +159,7 @@ bool GameManager::battle(Player& p,Monster& m){
             MonsterDamage = m.getAttackDamage();
         }
         else if (monsterAttack == 1){
-            MonsterDamage = m.skill(p);
+            MonsterDamage = m.skill(p).attack;
         } 
         if (speedTest(p.getSpeed()+ac.bonusSpeed,m.getSpeed())){
             bool MonsterDead = m.takeDamage(PlayerDamage);
