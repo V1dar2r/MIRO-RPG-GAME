@@ -169,7 +169,7 @@ $ git clone [https://github.com/V1dar2r/MIRO-RPG-GAME.git](https://github.com/V1
 $ cd src
 
 # 3. 컴파일 및 실행 (g++ 사용)
-$ g++ main.cpp -o game.exe
+$ $ g++ *.cpp -o game.exe
 $ ./game.exe
 
 ```
