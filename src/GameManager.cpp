@@ -1,7 +1,6 @@
 #include <iostream>
 #include <vector>
 #include <fstream>
-#include <conio.h>
 #include <random>
 #include <stack>
 #include <memory>

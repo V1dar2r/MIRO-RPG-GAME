@@ -2,7 +2,6 @@
 #include "Character.h"
 #include "Player.h"
 #include "GameManager.h"
-#include <conio.h>
 
 void View::addLog(std::string msg){
     logs.push_back(msg);
